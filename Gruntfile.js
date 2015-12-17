@@ -12,6 +12,7 @@ module.exports = function (grunt) {
     sass: {
       options: {
         sourceMap: true,
+        outputStyle: 'compressed',
         includePaths: ['theme/static/scss/bourbon', 'theme/static/scss/neat', 'theme/static/scss/base']
       },
       dist: {

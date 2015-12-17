@@ -55,7 +55,8 @@ target/
 
 # Node
 node_modules/
-
+theme/static/css/*.css
+theme/static/css/*.css.map
 # Pelican
 output/
 
