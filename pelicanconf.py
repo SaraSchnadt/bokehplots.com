@@ -21,6 +21,8 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
+IGNORE_FILES = ['*.scss', '*.css.map',]
+
 # Nav Links
 NAV = (
     ('About', '/pages/about-bokeh.html'),
