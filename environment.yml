@@ -1,0 +1,8 @@
+name: bokehplots_com
+dependencies:
+  - python
+  - pelican
+  - markdown
+  - nodejs
+channels:
+  - birdsarah

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>{{ SITENAME }}</title>
+  <meta name="description" content="{{ DESCRIPTION }}">
+  <meta name="author" content="{{ AUTHOR }}">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  {#
+  <link href='//fonts.googleapis.com/css?family=Raleway:100,200,300,400,600' rel='stylesheet' type='text/css'>
+  #}
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="{{ SITEURL }}/theme/css/main.css">
+
+
+  <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="{{ SITEURL }}/theme/js/site.js"></script>
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="{{ SITEURL }}/theme/images/favicon.ico">
+
+</head>
+<body class="">
+
+  <header class="navigation" role="banner">
+  <div class="wrapper">
+    <a href="{{ SITEURL }}/" class="logo">
+      <img src="{{ SITEURL }}/theme/images/logo.png" alt="Bokeh Logo">
+    </a>
+    <a href="{{ SITEURL }}/" class="navigation-menu logo-text">Bokeh</a>
+    <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">Menu</a>
+    <nav role="navigation">
+      <ul id="js-navigation-menu" class="navigation-menu show">
+        {% for name, link in NAV %}
+            <li class="nav-link"><a href="{{ link }}">{{ name }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- Primary Page Layout
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+{% block content %}
+{% endblock content %}
+
+
+<footer class="footer" role="contentinfo">
+  <div class="wrapper">
+    <div class="footer-links">
+      <ul>
+        <li><h3>About Us</h3></li>
+        {% for name, link in ABOUT %}
+            <li><a href="{{ link }}">{{ name }}</a></li>
+        {% endfor %}
+      </ul>
+      <ul>
+        <li><h3>Community</h3></li>
+        {% for name, link in COMMUNITY %}
+            <li><a href="{{ link }}">{{ name }}</a></li>
+        {% endfor %}
+      </ul>
+      <ul>
+        <li><h3>Find Us</h3></li>
+        {% for name, link in SOCIAL %}
+            <li><a href="{{ link }}">{{ name }}</a></li>
+        {% endfor %}
+      </ul>
+      <ul class="copyright">
+        <li>© Copyright 2015, Continuum Analytics.</li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+<!-- Google Analytics -->
+{% include 'includes/ga.html' %}
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+
+</html>

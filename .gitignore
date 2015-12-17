@@ -47,11 +47,18 @@ coverage.xml
 *.mo
 *.pot
 
-# Django stuff:
-*.log
-
 # Sphinx documentation
 docs/_build/
 
 # PyBuilder
 target/
+
+# Node
+node_modules/
+
+# Pelican
+output/
+
+# Editor
+.ropeproject
+*.swp

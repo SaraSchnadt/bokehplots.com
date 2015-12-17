@@ -1,0 +1,23 @@
+@import "bourbon";
+@import "base/base";
+@import "neat";
+
+@import "globals";
+@import "nav";
+@import "footer";
+@import "page";
+@import "index";
+
+body {
+  margin: 0em;
+  padding: 0em;
+}
+
+.wrapper {
+  @include clearfix;
+  @include outer-container;
+  position: relative;
+  z-index: 9999;
+  padding-left: 2em;
+  padding-right: 2em;
+}

@@ -1,0 +1,14 @@
+.section {
+  &.dark {
+    background-color: $section-background;
+  }
+  .content {
+    padding: 2em 0;
+    @extend .wrapper;
+  }
+}
+
+.title {
+  color: $pink;
+  font-size: 2em;
+}

@@ -1,0 +1,67 @@
+.footer {
+  $base-spacing: 1.5em !default;
+  $action-color: #477DCA !default;
+  $medium-screen: em(640) !default;
+  $large-screen: em(860) !default;
+  $dark-gray: #333 !default;
+  $footer-background: $dark-gray;
+  $footer-color: white;
+  $footer-link-color: transparentize($footer-color, 0.6);
+  $horizontal-bar-mode: $large-screen;
+
+  background: $footer-background;
+  padding: ($base-spacing * 2) $gutter;
+  width: 100%;
+
+  .footer-links {
+    @include outer-container;
+    @include justify-content(left);
+    margin-bottom: $base-spacing;
+  }
+
+  ul {
+    @include span-columns(12);
+    margin-bottom: $base-spacing * 2;
+    padding: 0;
+    @include media ($horizontal-bar-mode) {
+      @include span-columns(2);
+    }
+  }
+
+  .copyright {
+    @include omega();
+    @include media ($horizontal-bar-mode) {
+      @include span-columns(6);
+    }
+    > li {
+      color: $footer-link-color;
+      float: left;
+      @include media ($horizontal-bar-mode) {
+        float: right;
+      }
+    }
+  }
+
+  li {
+    line-height: 1.5em;
+    list-style: none;
+    text-align: left;
+  }
+
+  li > a {
+    color: $footer-link-color;
+    text-decoration: none;
+
+    &:focus,
+    &:hover {
+      color: transparentize($footer-color, 0);
+    }
+  }
+
+  li > h3 {
+    color: $footer-color;
+    font-size: 1em;
+    margin-bottom: 0.4em;
+  }  
+}
+
