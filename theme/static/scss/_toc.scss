@@ -11,7 +11,7 @@
   
   @include span-columns(3);
   font-size: 0.9em;
-  padding: 2em 0 0 0;
+  padding: 2em 0;
   background-color: $menu-background-color;
 
   .hide {
@@ -19,6 +19,7 @@
   }
   &.obfuscate {
     background-color: white;
+    width: 7%;
   }
   
   ul {
