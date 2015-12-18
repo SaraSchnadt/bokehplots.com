@@ -1,4 +1,4 @@
-header.navigation {
+.navigation {
   $base-border-color: gainsboro !default;
   $base-border-radius: 3px !default;
   $action-color: #477DCA !default;
@@ -159,6 +159,28 @@ header.navigation {
       float: right;
     }
   }
+  &.doc {
+    background-color: lighten($navigation-background, 65%);
+    min-height: 1.2em;
+    padding: 0.5em 0;
+    text-align: right;
+    ul li.nav-link {
+      background: inherit;
+      display: inline;
+      line-height: 1.5em;
+      padding-right: 0em;
+      padding-left: 0.8em;
+    }
+    ul li.nav-link a {
+      color: black;
+      &:focus,
+      &:hover {
+        color: darkgreen;
+      }
+      &.current {
+        font-weight: bold;
+      }
+    }
+  }
 
 }
-

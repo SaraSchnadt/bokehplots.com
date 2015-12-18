@@ -12,3 +12,16 @@
   color: $pink;
   font-size: 2em;
 }
+
+.docs.section {
+  @include outer-container;
+  max-width: none;
+  .content {
+    @include span-columns(9);  /* matching toc defined under _toc.scss */
+    @include omega();
+    padding-left: 0.5em;
+    h1 {
+      @extend .title;
+    }
+  }
+}
