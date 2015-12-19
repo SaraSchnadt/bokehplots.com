@@ -15,9 +15,7 @@
 
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  {#
-  <link href='//fonts.googleapis.com/css?family=Raleway:100,200,300,400,600' rel='stylesheet' type='text/css'>
-  #}
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600|Noto+Sans:400,700' rel='stylesheet' type='text/css'>
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -64,19 +62,19 @@
   <div class="wrapper">
     <div class="footer-links">
       <ul>
-        <li><h3>About Us</h3></li>
+        <li><span class="footer-title">About Us</span></li>
         {% for name, link in ABOUT %}
             <li><a href="{{ link }}">{{ name }}</a></li>
         {% endfor %}
       </ul>
       <ul>
-        <li><h3>Community</h3></li>
+        <li><span class="footer-title">Community</span></li>
         {% for name, link in COMMUNITY %}
             <li><a href="{{ link }}">{{ name }}</a></li>
         {% endfor %}
       </ul>
       <ul>
-        <li><h3>Find Us</h3></li>
+        <li><span class="footer-title">Find Us</span></li>
         {% for name, link in SOCIAL %}
             <li><a href="{{ link }}">{{ name }}</a></li>
         {% endfor %}

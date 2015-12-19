@@ -1,5 +1,53 @@
-$purple: #942257;
-$pink: #DB3480;
-$green: #327783;
-$nav-green: #A4B850;
-$section-background: #E9EAE9;
+// Media queries
+$large-screen: em(860) !default;
+$medium-screen: em(640) !default;
+
+// Spacing
+$base-spacing: 1.5em !default;
+$navigation-height: 60px;
+
+// Font-families
+$base-font-size: 16px;
+$logo-font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$source-sans-font-family: "Source Sans Pro", sans-serif; 
+$noto-sans-font-family: "Noto Sans", sans-serif;
+$normal-weight: 400;
+$logo-font-weight: $normal-weight;
+$source-sans-bold-font-weight: 600;
+$noto-bold-font-weight: 700;
+$logo-size: $base-font-size;
+
+// Base Colors
+$charcoal: #2f2f2f;
+$light-charcoal: #4c4c4c;
+$grey: #c4c3c3;
+$medium-grey: #e8e8e7;
+$light-grey: #e8e8e7;
+$white: #ffffff;
+$lime: #9fb744;
+$pink: #eb2a82;
+$light-pink: #f74ba1;
+$mint: #087d88;
+$aqua: #3bbcb5;
+$plum: #75436b;
+
+// Applied colors
+$hover-color: $pink;
+
+// Applied colors - header & footer
+$navigation-background-color: $charcoal;
+$navigation-text-head-color: $lime;
+$navigation-text-base-color: $medium-grey;
+
+// Applied colors - details
+$header-color: $pink;
+$sub-header-color: $light-charcoal;
+
+// Applied colors - nav
+$secondary-nav-background-color: $plum;
+$secondary-nav-text-color: $medium-grey;
+
+// Menu color
+$menu-background-color: $light-grey; 
+$menu-link-highlight-color: $lime;
+$menu-link-base-color: $charcoal;

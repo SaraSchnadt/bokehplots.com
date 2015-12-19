@@ -1,16 +1,8 @@
 .toc {
 
-  $menu-vertical-background-color: lighten(black, 40%);
-  $menu-link-medium: pink;
-  $menu-link-color: blue;
-  $menu-link-light: lightblue;
-  $menu-background-color: silver;
-  $menu-logo-color: black;
-  $menu-link-active: red;
-  $menu-background-color: black;
-  
   @include span-columns(3);
-  font-size: 0.9em;
+  font-family: $source-sans-font-family;
+  font-size: 0.75em;
   padding: 2em 0;
   background-color: $menu-background-color;
 
@@ -33,13 +25,12 @@
       border-bottom: solid 1px hsl(0, 0%, 25%);
     }
     &.current {
-      background: darken($menu-vertical-background-color, 10%);
+      background: darken($menu-background-color, 10%);
       a {
-        color: $menu-link-medium;
-        border-right: solid 1px darken($menu-vertical-background-color, 20%);
+        color: $menu-link-base-color;
         padding: $gutter / 4 $gutter * 1.5;
         &:hover {
-          background: darken($menu-vertical-background-color, 15%);
+          background-color: lighten($menu-background-color, 10%);
         }
       }
     }
@@ -50,81 +41,45 @@
       padding-left: 0;
       padding-right: 0;
     }
-    // Expand links
-    span.toctree-expand {
-      display: block;
-      float: left;
-      margin-left: -1.2em;
-      @extend .fa;
-      @extend .fa-plus-square-o;
-      font-size: .8em;
-      line-height: 1.6em;
-      color: darken($menu-link-medium, 20%);
-    }
   }
   // On state for the first level
   li.on a, li.current > a {
-    color: $menu-link-color;
+    color: $menu-link-highlight-color;
     padding: $gutter / 4 $gutter;
-    font-weight: bold;
+    font-weight: $source-sans-bold-font-weight;
     position: relative;
-    background: $menu-vertical-background-color;
+    background: darken($menu-background-color, 5%);
     border: none;
-    border-bottom: solid 1px darken($menu-vertical-background-color, 20%);
-    border-top: solid 1px darken($menu-vertical-background-color, 20%);
     padding-left: $gutter -4px;
     &:hover {
-      background: $menu-vertical-background-color;
-      span.toctree-expand {
-        color: $menu-link-medium;
-      }
+      background-color: lighten($menu-background-color, 10%);
     }
-    span.toctree-expand {
-      @extend .fa;
-      @extend .fa-minus-square-o;
-      display: block;
-      font-size: .8em;
-      line-height: 1.6em;
-      color: darken($menu-link-medium, 30%)
-    };
   }
   li.toctree-l2 {
     &.current {
       > a {
-        background: darken($menu-vertical-background-color, 20%);
+        background: darken($menu-background-color, 20%);
         padding: $gutter / 4 $gutter * 1.5;
       }
       li.toctree-l3 > a {
         display: block;
-        background: darken($menu-vertical-background-color, 20%);
+        background: darken($menu-background-color, 20%);
         padding: $gutter / 4 $gutter * 2.5;
       };
-    }
-    a:hover span.toctree-expand {
-      color: $menu-link-medium;
-    }
-    span.toctree-expand {
-      color: darken($menu-vertical-background-color, 35%);
     }
   }
   li.toctree-l3 {
     font-size: .9em;
     > a {
-      background: darken($menu-vertical-background-color, 25%);
+      background: darken($menu-background-color, 25%);
       padding: $gutter / 4 $gutter * 2.5;
     }
     li.toctree-l4 > a {
       display: block;
-      background: darken($menu-vertical-background-color, 25%);
+      background: darken($menu-background-color, 25%);
       padding: $gutter / 4 $gutter * 3.5;
       border-top: none;
       border-bottom: none;
-    }
-    a:hover span.toctree-expand {
-      color: $menu-link-medium;
-    }
-    span.toctree-expand {
-      color: darken($menu-vertical-background-color, 40%);
     }
   }
   li.toctree-l4 {
@@ -144,7 +99,7 @@
   }
   li ul li a {
     margin-bottom: 0;
-    color: $menu-link-light;
+    color: $menu-link-base-color;
     font-weight: normal;
   }
   a {
@@ -154,21 +109,9 @@
     display: block;
     position: relative;
     font-size: 90%;
-    color: $menu-link-light;
+    color: $menu-link-base-color;
     &:hover {
       background-color: lighten($menu-background-color, 10%);
-      cursor: pointer;
-      span.toctree-expand {
-        color: $menu-link-light;
-      }
-    }
-    &:active {
-      background-color: $menu-logo-color;
-      cursor: pointer;
-      color: $menu-link-active;
-      span.toctree-expand {
-        color: $menu-link-active;
-      }
     }
   }
 }

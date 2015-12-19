@@ -1,15 +1,7 @@
 .footer {
-  $base-spacing: 1.5em !default;
-  $action-color: #477DCA !default;
-  $medium-screen: em(640) !default;
-  $large-screen: em(860) !default;
-  $dark-gray: #333 !default;
-  $footer-background: $dark-gray;
-  $footer-color: white;
-  $footer-link-color: transparentize($footer-color, 0.6);
-  $horizontal-bar-mode: $large-screen;
 
-  background: $footer-background;
+  background: $navigation-background-color;
+  font-family: $source-sans-font-family;
   padding: ($base-spacing * 2) $gutter;
   width: 100%;
 
@@ -23,45 +15,48 @@
     @include span-columns(12);
     margin-bottom: $base-spacing * 2;
     padding: 0;
-    @include media ($horizontal-bar-mode) {
+    @include media ($large-screen) {
       @include span-columns(2);
     }
   }
 
   .copyright {
     @include omega();
-    @include media ($horizontal-bar-mode) {
+    @include media ($large-screen) {
       @include span-columns(6);
     }
     > li {
-      color: $footer-link-color;
+      color: $navigation-text-base-color;
+      font-size: 0.75em;
       float: left;
-      @include media ($horizontal-bar-mode) {
+      @include media ($large-screen) {
         float: right;
       }
     }
   }
 
   li {
-    line-height: 1.5em;
     list-style: none;
     text-align: left;
+    font-size: 0.75em;
   }
 
   li > a {
-    color: $footer-link-color;
+    color: $navigation-text-base-color;
     text-decoration: none;
 
     &:focus,
     &:hover {
-      color: transparentize($footer-color, 0);
+      color: $hover-color;
     }
   }
 
-  li > h3 {
-    color: $footer-color;
+  li > .footer-title {
+    color: $navigation-text-head-color;
     font-size: 1em;
     margin-bottom: 0.4em;
+    text-transform: uppercase;
+    font-weight: $normal-weight;
   }  
 }
 

@@ -1,6 +1,6 @@
 .section {
   &.dark {
-    background-color: $section-background;
+    background-color: $medium-grey;
   }
   .content {
     padding: 2em 0;
@@ -10,7 +10,16 @@
 
 .title {
   color: $pink;
+  font-family: $noto-sans-font-family;
+  font-weight: $normal-weight;
   font-size: 2em;
+  margin-bottom: 0;
+}
+
+.subtitle {
+  color: $light-charcoal;
+  font-family: $noto-sans-font-family;
+  font-weight: $normal-weight;
 }
 
 .docs.section {
