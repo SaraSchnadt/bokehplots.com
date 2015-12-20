@@ -1,6 +1,19 @@
 .content.title-content {
-  padding-top: 1em;
+  padding-top: 0.5em;
   padding-bottom: 1.6em;
+  margin-bottom: 0;
+  .title {
+    font-size: 2em;
+    margin: 0.5em 0 0 0;
+    line-height: 1em;
+    padding: 0;
+  }
+  .subtitle {
+    color: $light-charcoal;
+    font-family: $noto-sans-font-family;
+    font-weight: $normal-weight;
+    font-size: 0.85em;
+  }
 }
 
 .mosaic-backdrop {

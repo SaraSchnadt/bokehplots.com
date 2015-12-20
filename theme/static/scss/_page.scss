@@ -1,7 +1,19 @@
+.title {
+  color: $pink;
+  font-family: $noto-sans-font-family;
+  font-weight: $normal-weight;
+  font-size: 1.5em;
+}
+
 .section {
   .content {
-    padding: 2em 0 1em 0;
+    padding: 2.5em 0;
     @extend .wrapper;
+    p {
+      font-size: 0.85em;
+      margin: 1.5em 0;
+      line-height: 1.4em;  
+    }
   }
   h3 {
     text-transform: uppercase;
@@ -30,21 +42,6 @@
       margin-bottom: 1.5em;
     }
   }
-}
-
-.title {
-  color: $pink;
-  font-family: $noto-sans-font-family;
-  font-weight: $normal-weight;
-  font-size: 2em;
-  margin-bottom: 0;
-}
-
-.subtitle {
-  color: $light-charcoal;
-  font-family: $noto-sans-font-family;
-  font-weight: $normal-weight;
-  font-size: 0.9em;
 }
 
 .docs.section {

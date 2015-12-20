@@ -2,7 +2,7 @@
 
   @include span-columns(3);
   font-family: $source-sans-font-family;
-  font-size: 0.75em;
+  font-size: 0.85em;
   margin-top: 3em;
   padding: 2em 0;
   background-color: $menu-background-color;
@@ -46,7 +46,7 @@
   // On state for the first level
   li.on a, li.current > a {
     color: $menu-link-highlight-color;
-    padding: $gutter / 4 $gutter;
+    padding: $gutter / 2 $gutter;
     font-weight: $source-sans-bold-font-weight;
     position: relative;
     background: lighten($menu-background-color, 5%);
