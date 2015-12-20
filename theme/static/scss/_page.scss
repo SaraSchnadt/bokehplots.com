@@ -14,6 +14,10 @@
       margin: 1.5em 0;
       line-height: 1.4em;  
     }
+   li {
+    list-style-type: circle;
+    list-style-position: inside;
+   }
   }
   h3 {
     text-transform: uppercase;
@@ -54,5 +58,8 @@
     h1 {
       @extend .title;
     }
+  }
+  img {
+    border: none;
   }
 }

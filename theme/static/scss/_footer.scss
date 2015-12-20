@@ -6,6 +6,7 @@
 
   .footer-links {
     @include outer-container;
+    max-width: none;
     @include justify-content(left);
   }
 

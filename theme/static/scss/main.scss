@@ -10,6 +10,7 @@
 @import "page";
 @import "index";
 @import "toc";
+@import "code_highlight";
 
 body {
   margin: 0em;
@@ -22,6 +23,7 @@ body {
 .wrapper {
   @include clearfix;
   @include outer-container;
+  max-width: none;
   position: relative;
   z-index: 9999;
   padding-left: 2em;
