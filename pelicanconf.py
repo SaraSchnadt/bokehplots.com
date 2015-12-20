@@ -30,6 +30,12 @@ NAV = (
     ('Docs', '//bokeh.pydata.org/en/latest/'),
     ('Github', '//github.com/bokeh/bokeh'),
 )
+NAV_SECOND = (
+    ('Detailed user guide', '//bokeh.pydata.org/en/latest/docs/user-guide.html'),
+    ('Tutorials in jupyter notebook', '//bokeh.pydata.org/en/latest/docs/gallery.html'),
+    ('Hosting and installation', '//bokeh.pydata.org/en/latest/'),
+    ('FAQ', '//bokeh.pydata.org/en/latest/faq.html'),
+)
 # Community Links
 COMMUNITY = (
     ('Contribute', '#'),

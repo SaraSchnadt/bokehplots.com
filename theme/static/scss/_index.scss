@@ -1,0 +1,48 @@
+.content.title-content {
+  padding-top: 1em;
+  padding-bottom: 1.6em;
+}
+
+.mosaic-backdrop {
+  line-height: 0;
+  position: relative;
+  width: 100%;
+
+  img {
+   height: auto;
+   left: 0; 
+   position: relative;
+   top: 0;
+   width: 100%;
+  }
+
+  .copy {
+    z-index: 999;
+  }
+
+  .overlay {
+    @include linear-gradient(to bottom, rgba(0,0,0,0), white) 
+    display: block;
+    @include position(absolute, 40px 0px 0px 0px);
+  }
+}
+
+.getting-started {
+  @include span-columns(4);
+  padding-right: 1em;
+}
+
+.examples {
+  @include span-columns(6);
+  padding-right: 2em;
+}
+
+.value-prop {
+  margin-top: 1.5em;
+  margin-bottom: 2em;
+  font-size: 0.9em;
+  .lead {
+    color: $pink;
+    font-size: 1.5em;
+  }
+}

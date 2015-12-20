@@ -1,10 +1,34 @@
 .section {
+  .content {
+    padding: 2em 0 1em 0;
+    @extend .wrapper;
+  }
+  h3 {
+    text-transform: uppercase;
+    color: $mint;
+    font-family: $source-sans-font-family;
+    font-weight: $source-sans-bold-font-weight;
+    font-size: 1.1em;
+  }
+  img {
+    @include border-color($charcoal);
+    @include border-style(solid);
+    @include border-width(1px);
+  }
+  .caption {
+    margin-top: 1em;
+    font-family: $source-sans-font-family;
+    font-weight: $normal-weight;
+    font-size: 0.9em;
+  } 
+
   &.dark {
     background-color: $medium-grey;
   }
-  .content {
-    padding: 2em 0;
-    @extend .wrapper;
+  &.light {
+    h3 {
+      margin-bottom: 1.5em;
+    }
   }
 }
 
@@ -20,6 +44,7 @@
   color: $light-charcoal;
   font-family: $noto-sans-font-family;
   font-weight: $normal-weight;
+  font-size: 0.9em;
 }
 
 .docs.section {

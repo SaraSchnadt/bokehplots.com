@@ -1,5 +1,4 @@
 .navigation {
-
   background-color: $navigation-background-color;
   border-bottom: 1px solid darken($navigation-background-color, 10);
   min-height: $navigation-height;
@@ -16,7 +15,7 @@
 
     img {
       max-height: $navigation-height;
-      padding: 0.8em 0;
+      padding: 0.2em 0;
     }
   }
   .logo-text {
@@ -25,7 +24,7 @@
     display: inline-block;
     text-decoration: none;
     margin: 0 0 0 $base-spacing * -1;
-    padding-top: 1.1em;
+    padding-top: 0.5em;
   }
   // Mobile view
 
@@ -112,6 +111,7 @@
       color: $navigation-text-head-color;
       display: inline-block;
       text-decoration: none;
+      text-transform: uppercase;
 
       @include media ($large-screen) {
         padding-right: 1em;
@@ -143,35 +143,28 @@
       float: right;
     }
   }
-  &.doc {
-    background-color: $secondary-nav-background-color;
-    min-height: 1.2em;
-    padding: 0.5em 0;
-    text-align: right;
-    ul {
-      margin: 0;
-    }
-    ul li.nav-link {
-      background: inherit;
-      display: inline;
-      line-height: 1.5em;
-      padding-right: 0em;
-      padding-left: 0.8em;
-    }
-    ul li.nav-link a {
-      color: $secondary-nav-text-color;
-      &:focus,
-      &:hover {
-        text-decoration: underline;
-      }
-      &.current {
-        font-weight: bold;
-      }
-    }
-  }
-
 }
 .second-nav {
-  padding: 1em;
   background-color: $secondary-nav-background-color;
+  min-height: 1.2em;
+  padding: 0.5em 2em;
+  text-transform: uppercase;
+  ul li.nav-link {
+    background: inherit;
+    display: inline;
+    line-height: 1.5em;
+    padding-right: 2em;
+  }
+  ul li.nav-link a {
+    font-size: 0.75em;
+    font-family: $source-sans-font-family;
+    color: $secondary-nav-text-color;
+    &:focus,
+    &:hover {
+      text-decoration: underline;
+    }
+    &.current {
+      font-weight: bold;
+    }
+  }
 }

@@ -3,35 +3,66 @@
 {% block content %}
 
   <div class="section light">
-    <div class="content">
+    <div class="mosaic-backdrop">
+      <img src="/theme/images/mosaic.png">
+      <div class="overlay"></div>
+    </div>
+    <div class="content title-content">
       <h2 class="title">Beautiful visualizations, without web tech</h2>
-      <p class="subtitle">Make interactive plots and applications on the web without HTML, CSS, or Javascript</p>
+      <p class="subtitle">You create interactive plots and apps in Python, we generate the HTML, Javascript and CSS</p>
     </div>
   </div>
 
   <div class="section dark">
     <div class="content">
       <h3>Getting started</h3>
+      <div class="getting-started">
+        <img src="/theme/images/getting_started_1.png">
+        <p class="caption">Video Tutorial</p>
+      </div>
+      <div class="getting-started">
+        <img src="/theme/images/getting_started_2.png">
+        <p class="caption">Quick Start Guide</p>
+      </div>
+      <div class="getting-started">
+        <img src="/theme/images/getting_started_3.png">
+        <p class="caption">Sample plot, with code</p>
+      </div>
     </div>
   </div>
   <div class="second-nav">
+      <nav role="navigation">
+        <ul class="navigation-menu show">
+          {% for name, link in NAV_SECOND  %}
+              <li class="nav-link"><a href="{{ link }}">{{ name }}</a></li>
+          {% endfor %}
+        </ul>
+      </nav>
   </div>
   <div class="section light">
     <div class="content">
       <h3>Examples</h3>
+      <div class="examples">
+        <img src="/theme/images/examples_1.png">
+        <p class="caption">More in our gallery...</p>
+      </div>
+      <div class="examples">
+        <img src="/theme/images/examples_2.png">
+        <p class="caption"></p>
+      </div>
     </div>
   </div>
   <div class="section dark">
     <div class="content">
-      <p>
-        <span class="value-prop">Create powerful interactive visualizations<span>
-        with small or very large data sets as an exploratory plot, a dashboard,
+      <p class="value-prop">
+        <span class="lead">Create powerful interactive visualizations</span>
+        with small or <strong>very large data sets</strong> as an exploratory plot, a dashboard,
         or an app. Your visualization can integrate seamlessly with a research
         process in a Jupyter Notebook, stand alone locally or on the web, or
         become part of a larger soware ecosystem.
       </p>
-      <p>
-        <span class="value-prop">Powered by Anaconda.<span>
+      <p class="value-prop">
+        <span class="lead">Powered by Anaconda.</span>
         Bokeh is part of the Anaconda platform, which gives you all the tools you
         need to create an environment for your data, prepare it, perform computations,
         and visualize your analysis at every stage of your process.

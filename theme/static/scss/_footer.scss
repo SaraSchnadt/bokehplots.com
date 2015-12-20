@@ -1,19 +1,16 @@
 .footer {
 
-  background: $navigation-background-color;
+  background: $light-charcoal;
   font-family: $source-sans-font-family;
-  padding: ($base-spacing * 2) $gutter;
-  width: 100%;
+  padding: 2em;
 
   .footer-links {
     @include outer-container;
     @include justify-content(left);
-    margin-bottom: $base-spacing;
   }
 
   ul {
     @include span-columns(12);
-    margin-bottom: $base-spacing * 2;
     padding: 0;
     @include media ($large-screen) {
       @include span-columns(2);

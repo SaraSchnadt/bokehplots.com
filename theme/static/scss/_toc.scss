@@ -3,6 +3,7 @@
   @include span-columns(3);
   font-family: $source-sans-font-family;
   font-size: 0.75em;
+  margin-top: 3em;
   padding: 2em 0;
   background-color: $menu-background-color;
 
@@ -25,7 +26,7 @@
       border-bottom: solid 1px hsl(0, 0%, 25%);
     }
     &.current {
-      background: darken($menu-background-color, 10%);
+      background: lighten($menu-background-color, 10%);
       a {
         color: $menu-link-base-color;
         padding: $gutter / 4 $gutter * 1.5;
@@ -48,7 +49,7 @@
     padding: $gutter / 4 $gutter;
     font-weight: $source-sans-bold-font-weight;
     position: relative;
-    background: darken($menu-background-color, 5%);
+    background: lighten($menu-background-color, 5%);
     border: none;
     padding-left: $gutter -4px;
     &:hover {
@@ -58,12 +59,12 @@
   li.toctree-l2 {
     &.current {
       > a {
-        background: darken($menu-background-color, 20%);
+        background: lighten($menu-background-color, 20%);
         padding: $gutter / 4 $gutter * 1.5;
       }
       li.toctree-l3 > a {
         display: block;
-        background: darken($menu-background-color, 20%);
+        background: lighten($menu-background-color, 20%);
         padding: $gutter / 4 $gutter * 2.5;
       };
     }
@@ -71,12 +72,12 @@
   li.toctree-l3 {
     font-size: .9em;
     > a {
-      background: darken($menu-background-color, 25%);
+      background: lighten($menu-background-color, 25%);
       padding: $gutter / 4 $gutter * 2.5;
     }
     li.toctree-l4 > a {
       display: block;
-      background: darken($menu-background-color, 25%);
+      background: lighten($menu-background-color, 25%);
       padding: $gutter / 4 $gutter * 3.5;
       border-top: none;
       border-bottom: none;

@@ -1,10 +1,9 @@
 // Media queries
-$large-screen: em(860) !default;
-$medium-screen: em(640) !default;
+$large-screen: 640px;
 
 // Spacing
 $base-spacing: 1.5em !default;
-$navigation-height: 60px;
+$navigation-height: 40px;
 
 // Font-families
 $base-font-size: 16px;
@@ -49,5 +48,5 @@ $secondary-nav-text-color: $medium-grey;
 
 // Menu color
 $menu-background-color: $light-grey; 
-$menu-link-highlight-color: $lime;
+$menu-link-highlight-color: $mint;
 $menu-link-base-color: $charcoal;

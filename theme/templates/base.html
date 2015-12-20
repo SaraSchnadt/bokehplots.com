@@ -59,30 +59,28 @@
 
 
 <footer class="footer" role="contentinfo">
-  <div class="wrapper">
-    <div class="footer-links">
-      <ul>
-        <li><span class="footer-title">About Us</span></li>
-        {% for name, link in ABOUT %}
-            <li><a href="{{ link }}">{{ name }}</a></li>
-        {% endfor %}
-      </ul>
-      <ul>
-        <li><span class="footer-title">Community</span></li>
-        {% for name, link in COMMUNITY %}
-            <li><a href="{{ link }}">{{ name }}</a></li>
-        {% endfor %}
-      </ul>
-      <ul>
-        <li><span class="footer-title">Find Us</span></li>
-        {% for name, link in SOCIAL %}
-            <li><a href="{{ link }}">{{ name }}</a></li>
-        {% endfor %}
-      </ul>
-      <ul class="copyright">
-        <li>© Copyright 2015, Continuum Analytics.</li>
-      </ul>
-    </div>
+  <div class="footer-links">
+    <ul>
+      <li><span class="footer-title">About Us</span></li>
+      {% for name, link in ABOUT %}
+          <li><a href="{{ link }}">{{ name }}</a></li>
+      {% endfor %}
+    </ul>
+    <ul>
+      <li><span class="footer-title">Community</span></li>
+      {% for name, link in COMMUNITY %}
+          <li><a href="{{ link }}">{{ name }}</a></li>
+      {% endfor %}
+    </ul>
+    <ul>
+      <li><span class="footer-title">Find Us</span></li>
+      {% for name, link in SOCIAL %}
+          <li><a href="{{ link }}">{{ name }}</a></li>
+      {% endfor %}
+    </ul>
+    <ul class="copyright">
+      <li>© Copyright 2015, Continuum Analytics.</li>
+    </ul>
   </div>
 </footer>
 
