@@ -15,7 +15,7 @@
 
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600|Noto+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600%7CNoto+Sans:400,700' rel='stylesheet' type='text/css'>
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -35,14 +35,14 @@
 </head>
 <body class="">
 
-  <header class="navigation" role="banner">
+  <header class="navigation">
   <div class="wrapper">
     <a href="{{ SITEURL }}/" class="logo">
       <img src="{{ SITEURL }}/theme/images/logo.png" alt="Bokeh Logo">
     </a>
     <a href="{{ SITEURL }}/" class="navigation-menu logo-text">Bokeh</a>
     <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">Menu</a>
-    <nav role="navigation">
+    <nav>
       <ul id="js-navigation-menu" class="navigation-menu show">
         {% for name, link in NAV %}
             <li class="nav-link"><a href="{{ link }}">{{ name }}</a></li>
@@ -58,7 +58,7 @@
 {% endblock content %}
 
 
-<footer class="footer" role="contentinfo">
+<footer class="footer">
   <div class="footer-links">
     <ul>
       <li><span class="footer-title">About Us</span></li>
