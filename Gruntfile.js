@@ -11,7 +11,7 @@ module.exports = function (grunt) {
 
     sass: {
       options: {
-        sourceMap: true,
+        sourceMap: false,
         outputStyle: 'compressed',
         includePaths: ['theme/static/scss/bourbon', 'theme/static/scss/neat', 'theme/static/scss/base']
       },
@@ -69,8 +69,8 @@ module.exports = function (grunt) {
   });
 
   grunt.registerTask('default', ['sass']);
-  grunt.registerTask('build', ['clean', 'shell:html', ]);
+  grunt.registerTask('build', ['clean', 'sass:dist', 'shell:html', ]);
   grunt.registerTask('serve', ['build', 'connect:server', 'watch']);
-  grunt.registerTask('deploy', ['clean', 'shell:publish']);
+  grunt.registerTask('deploy', ['clean', 'sass:dist', 'shell:publish']);
 
 };
