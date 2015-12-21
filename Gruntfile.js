@@ -32,7 +32,7 @@ module.exports = function (grunt) {
     },
 
     watch: {
-      files: ['content/**/*.*', 'theme/templates/**/*.*', 'theme/static/scss/*.*'],
+      files: ['content/**/*.*', 'theme/templates/**/*.*', 'theme/static/scss/*.*', 'theme/static/scss/**/*.*'],
       tasks: ['sass:dist', 'build'],
       options: {
         livereload: 35729,

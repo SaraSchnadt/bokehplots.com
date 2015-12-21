@@ -11,6 +11,14 @@
 @import "index";
 @import "code_highlight";
 
+@import "docs/basic";
+@import "docs/main";
+@import "docs/toc";
+@import "docs/reference";
+@import "docs/callouts";
+@import "docs/gallery";
+@import "docs/nav";
+
 body {
   margin: 0em;
   padding: 0em;
