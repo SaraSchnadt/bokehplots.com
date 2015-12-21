@@ -25,7 +25,7 @@
     }
     > li {
       color: $navigation-text-base-color;
-      font-size: 0.75em;
+      font-size: 0.85em;
       float: left;
       @include media ($large-screen) {
         float: right;
@@ -36,7 +36,7 @@
   li {
     list-style: none;
     text-align: left;
-    font-size: 0.75em;
+    font-size: 0.85em;
   }
 
   li > a {

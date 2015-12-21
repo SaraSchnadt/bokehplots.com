@@ -16,7 +16,6 @@ $plum: #75436b;
 $navigation-height: 40px;
 
 // Font Sizes
-$base-font-size: 16px;
 
 // Font-families
 $logo-font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -26,9 +25,10 @@ $normal-weight: 400;
 $logo-font-weight: $normal-weight;
 $source-sans-bold-font-weight: 600;
 $noto-bold-font-weight: 700;
-$logo-size: $base-font-size;
+$logo-size: 16px;
 
 // Typography
+$base-font-size: 14px;
 $base-font-family: $noto-sans-font-family;
 $heading-font-family: $source-sans-font-family;
 

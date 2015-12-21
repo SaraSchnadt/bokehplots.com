@@ -13,6 +13,11 @@
     background-color: white;
     width: 7%;
   }
+
+  code {
+    font-weight: $normal-weight;
+    font-size: 0.9em;
+  }
   
   ul {
     margin-bottom: 0;
@@ -89,6 +94,7 @@
   }
   li.current ul {
     display: block;
+    overflow-x: scroll;
   }
   li ul {
     margin-bottom: 0;

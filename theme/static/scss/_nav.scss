@@ -36,7 +36,7 @@
     margin: 0;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 0.75em;
+    font-size: 0.85em;
 
     @include media ($large-screen) {
       display: none;
@@ -82,7 +82,7 @@
   // The nav items
 
   ul li.nav-link {
-    font-size: 0.75em;
+    font-size: 0.85em;
     background: $navigation-background-color;
     display: block;
     line-height: $base-line-height;
@@ -144,7 +144,7 @@
     padding-right: 2em;
   }
   ul li.nav-link a {
-    font-size: 0.75em;
+    font-size: 0.85em;
     font-family: $source-sans-font-family;
     color: $secondary-nav-text-color;
     &:focus,

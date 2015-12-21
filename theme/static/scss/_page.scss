@@ -10,7 +10,6 @@
     padding: 2.5em 0;
     @extend .wrapper;
     p {
-      font-size: 0.85em;
       margin: 1.5em 0;
       line-height: 1.4em;  
     }
@@ -38,7 +37,6 @@
     margin-top: 1em;
     font-family: $source-sans-font-family;
     font-weight: $normal-weight;
-    font-size: 0.9em;
   } 
 
   &.dark {
