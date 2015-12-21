@@ -34,9 +34,9 @@
     float: right;
     line-height: $navigation-height;
     margin: 0;
-    padding-right: 1em;
     text-decoration: none;
     text-transform: uppercase;
+    font-size: 0.75em;
 
     @include media ($large-screen) {
       display: none;
@@ -44,7 +44,7 @@
 
     &:focus,
     &:hover {
-      color: $hover-color;
+      color: $navigation-text-base-color;
     }
   }
 
@@ -161,13 +161,16 @@
 
   // Elements on the far right
   .navigation-tools {
+    @include clearfix;
     clear: both;
     display: block;
+    padding-top: 0.4em;
 
     @include media($large-screen) {
       background: transparent;
       clear: none;
       float: right;
+      padding-top: 0;
     }
   }
   
