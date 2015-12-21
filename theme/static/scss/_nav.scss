@@ -119,13 +119,13 @@
 
       &:focus,
       &:hover {
-        color: $hover-color;
+        color: $navigation-text-base-color;
       }
     }
   }
 
   .active-nav-item a {
-    border-bottom: 1px solid $hover-color;
+    border-bottom: 1px solid $navigation-text-base-color;
     padding-bottom: 3px;
   }
 
@@ -168,6 +168,90 @@
       background: transparent;
       clear: none;
       float: right;
+    }
+  }
+  
+  // Sub menus
+  $navigation-submenu-padding: 1em;
+  $navigation-submenu-width: 12em;
+
+  li.more.nav-link {
+    padding-right: 0;
+
+    @include media($large-screen) {
+      padding-right: $navigation-submenu-padding;
+    }
+
+    > ul > li:first-child a  {
+      padding-top: 1em;
+    }
+
+    a {
+      margin-right: $navigation-submenu-padding;
+    }
+
+    > a {
+      padding-right: 0.6em;
+    }
+
+    > a:after {
+      @include position(absolute, auto -0.4em auto auto);
+      content: '\25BE';
+      color: $navigation-text-base-color;
+    }
+  }
+
+  li.more {
+    overflow: visible;
+    padding-right: 0;
+
+    a {
+      padding-right: 0.8em;
+    }
+
+    > a {
+      padding-right: 1.6em;
+      position: relative;
+
+      @include media($large-screen) {
+        margin-right: $navigation-submenu-padding;
+      }
+
+      &:after {
+        content: '›';
+        font-size: 1.2em;
+        position: absolute;
+        right: $navigation-submenu-padding / 2;
+      }
+    }
+
+    &:focus > .submenu,
+    &:hover > .submenu {
+      display: block;
+    }
+
+    @include media($large-screen) {
+      padding-right: 0.8em;
+      position: relative;
+    }
+  }
+
+  ul.submenu {
+    display: none;
+    z-index: 10; // Move above other menu
+    background-color: $secondary-nav-background-color;
+
+    @include media($large-screen) {
+      padding: 1em;
+      position: absolute;
+      top: 1.5em;
+    }
+
+    .submenu {
+      @include media($large-screen) {
+        left: $navigation-submenu-width - 0.2em;
+        top: 0;
+      }
     }
   }
 }
