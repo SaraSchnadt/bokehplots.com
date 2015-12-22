@@ -32,9 +32,9 @@ NAV = (
 )
 NAV_SECOND = (
     ('Detailed user guide', '//bokeh.pydata.org/en/latest/docs/user_guide.html'),
-    ('Tutorials in jupyter notebook', '//bokeh.pydata.org/en/latest/docs/gallery.html'),
-    ('Hosting and installation', '//bokeh.pydata.org/en/latest/'),
-    ('FAQ', '//bokeh.pydata.org/en/latest/faq.html'),
+    ('Tutorials in jupyter notebook', '//nbviewer.ipython.org/github/bokeh/bokeh-notebooks/blob/master/index.ipynb'),
+    ('Hosting and installation', '//bokeh.pydata.org/en/latest/docs/installation.html'),
+    ('FAQ', '/pages/faqs.html'),
 )
 # Community Links
 LINKS = (
