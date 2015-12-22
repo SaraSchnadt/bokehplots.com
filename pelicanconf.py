@@ -21,7 +21,7 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-IGNORE_FILES = ['*.scss', '*.css.map',]
+IGNORE_FILES = ['*.scss', '*.css.map']
 
 # Nav Links
 NAV = (
@@ -37,21 +37,25 @@ NAV_SECOND = (
     ('FAQ', '//bokeh.pydata.org/en/latest/faq.html'),
 )
 # Community Links
-COMMUNITY = (
-    ('Contribute', '#'),
-    ('Join our mailing list', '#')
+LINKS = (
+    ('FAQs', '/pages/faqs.html'),
+    ('Technical vision', '/pages/technical-vision.html'),
+    ('Roadmap', '/pages/roadmap.html'),
+    ('Citation', '/pages/citation.html'),
 )
 # About Links
 ABOUT = (
-    ('Team', '#'),
-    ('Technical vision', '#'),
-    ('Contact', '/pages/contact.html')
+    ('About', '/pages/about-bokeh.html'),
+    ('Team', '/pages/team.html'),
+    ('Contact', '/pages/contact.html'),
 )
 # Social widget
 SOCIAL = (
-    ('Github', '#'),
-    ('Twitter', '#'),
-    ('Youtube', '#')
+    ('Contribute', '/pages/contribute.html'),
+    ('Mailing list', '//groups.google.com/a/continuum.io/forum/#!forum/bokeh'),
+    ('Github', '//github.com/bokeh/bokeh'),
+    ('Twitter', '//twitter.com/BokehPlots'),
+    ('YouTube', '//www.youtube.com/channel/UCK0rSk29mmg4UT4bIOvPYhw')
 )
 
 DEFAULT_PAGINATION = 10
