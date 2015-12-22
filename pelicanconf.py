@@ -31,7 +31,7 @@ NAV = (
     ('Github', '//github.com/bokeh/bokeh'),
 )
 NAV_SECOND = (
-    ('Detailed user guide', '//bokeh.pydata.org/en/latest/docs/user-guide.html'),
+    ('Detailed user guide', '//bokeh.pydata.org/en/latest/docs/user_guide.html'),
     ('Tutorials in jupyter notebook', '//bokeh.pydata.org/en/latest/docs/gallery.html'),
     ('Hosting and installation', '//bokeh.pydata.org/en/latest/'),
     ('FAQ', '//bokeh.pydata.org/en/latest/faq.html'),

@@ -28,6 +28,13 @@
     font-weight: $source-sans-bold-font-weight;
     font-size: 1.1em;
   }
+  .small-title-with-sub {
+    .sub {
+      font-weight: $normal-weight;
+      text-transform: none;
+      float: right;
+    } 
+  }
   img {
     @include border-color($charcoal);
     @include border-style(solid);
