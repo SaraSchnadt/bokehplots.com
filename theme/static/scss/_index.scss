@@ -20,14 +20,26 @@
   position: relative;
   width: 100%;
 
-  img {
-   height: auto;
-   left: 0; 
-   position: relative;
-   top: 0;
-   width: 100%;
+  ul {
+    width: 125%;
+    overflow: hidden;
+    height: 75px;
+
+  li {
+    float: left;
+    width: 100px;
+
+    img {
+      border: none;
+      height: auto;
+      left: 0; 
+      position: relative;
+      top: 0;
+      width: 100%;
+    }
   }
 
+  }
   .copy {
     z-index: 999;
   }

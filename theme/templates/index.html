@@ -4,7 +4,11 @@
 
   <div class="section light">
     <div class="mosaic-backdrop">
-      <img src="/theme/images/mosaic.png">
+      <ul>
+        {% for i in range(1, 14) %}
+          <li><img src="/theme/images/Mosaic{{ i }}.png"></li>
+        {% endfor %}
+      </ul>
       <div class="overlay"></div>
     </div>
     <div class="content title-content">

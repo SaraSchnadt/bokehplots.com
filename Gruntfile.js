@@ -28,6 +28,9 @@ module.exports = function (grunt) {
       },
       publish: {
         command: 'pelican content -o output -s publishconf.py'
+      },
+      compress_images: {
+        command: 'optipng theme/static/images/*.png'
       }
     },
 
@@ -71,6 +74,7 @@ module.exports = function (grunt) {
   grunt.registerTask('default', ['sass']);
   grunt.registerTask('build', ['clean', 'sass:dist', 'shell:html', ]);
   grunt.registerTask('serve', ['build', 'connect:server', 'watch']);
-  grunt.registerTask('deploy', ['clean', 'sass:dist', 'shell:publish']);
+  grunt.registerTask('deploy', ['clean', 'shell:compress_images', 'sass:dist', 'shell:publish']);
+  grunt.registerTask('compress_images', ['shell:compress_images']);
 
 };
